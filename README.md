@@ -1,109 +1,41 @@
-This project is a single-page, Minecraft‑themed fan site with heavy pixel‑art vibes and interactive scrolling sections.
+🌍 Minecraft Scrollverse
+A single‑page, Minecraft‑themed website with pixel‑art vibes, juicy color palettes, and a horizontal mob carousel. Built for portfolios, Fiverr gigs, and flexing your front‑end skills.
 
-Project vibe
-Full Minecraft aesthetic: pixel font, blocky borders, fake “textures,” neon‑green accents, and a custom diamond‑sword cursor.
-
-Built as a single index.html file using plain HTML, CSS and a tiny bit of vanilla JS for smooth scrolling and mob scroll‑snap.
-
-Designed for portfolio / Fiverr demo use: everything is client‑side and easy to drop on Netlify, Vercel, or GitHub Pages.
-
-✨ Features & Aesthetics
-🧭 Layout & Navigation
-Sticky top navbar with links: mine!, the OGs, Mobs, Manual.
-
-Smooth scroll behavior between four full‑screen sections.
-
-Pixel‑art inspired font (e.g. Press Start 2P or similar), all‑caps headings, chunky spacing.
+✨ Features
+🧭 4 Scroll Sections
+mine! - the OGs - Mobs - Manual — all full‑height with smooth scrolling and sticky navbar.
 
 🎮 Minecraft Aesthetic
-Diamond sword cursor used globally for the page and all interactive elements.
+Pixel font, blocky borders, fake “textures”, neon accents, and a diamond sword cursor instead of the boring default pointer.
 
-Square/“block” borders, no rounded corners, with offset box‑shadows to mimic pixel blocks.
+🎨 Custom Color Palettes
+Uses multiple pixel‑art palettes like Toxic Slime, Black Cherry, Eerie Glow, Pastry, Sweet Dreams etc. for different sections.
 
-Backgrounds based on Minecraft‑style palettes:
+👑 OGs Section
+Cards for Steve, Alex, Technoblade, Dream, Philza, TommyInnit. Each card:
 
-Greens and teals for “Toxic Slime” / overworld grass vibes.
+Top: image area for character art/skin.
 
-Reds/purples for “Black Cherry” OG section.
+Bottom: hover‑revealed role/mini‑bio.
 
-Teal/gray “Eerie Glow” for mobs (moody hostile‑mob energy).
+👾 Mobs Carousel
+10 horizontal cards: Creeper, Zombie, Skeleton, Enderman, Spider, Witch, Slime, Ghast, Blaze, Wither Skeleton.
+Hover = pop‑out, blur removed, glow, and short 2‑liner description.
 
-Warm browns (“Pastry”) for the Manual (cozy crafting‑table energy).
-
-Soft purples (“Sweet Dreams”) in the footer for a chill, end‑of‑page vibe.
-
-Optional image slots ready for custom textures, skins and mob renders.
-
-👤 Section 1 – mine! (Notch + Mojang)
-Short intro about Notch and Mojang + the origins of Minecraft.
-
-Two‑column layout:
-
-Text column with lore paragraphs styled like in‑game tooltips.
-
-“Mojang” block on the side: a floating card using the red palette, animated up/down for a subtle idle motion.
-
-🧱 Section 2 – the OGs
-Grid of six “OG” cards:
-
-Steve
-
-Alex
-
-Technoblade
-
-Dream
-
-Philza
-
-TommyInnit
-
-Each card:
-
-Top half reserved for an image (player skin / fanart).
-
-Hover state: background color shift + subtle slide/scale.
-
-Bottom half reveals name + a short, punchy role/label (PvP god, chaos boy, etc.).
-
-👾 Section 3 – Mobs
-Horizontal scroll area with 10 mob cards:
-
-Creeper, Zombie, Skeleton, Enderman, Spider, Witch, Slime, Ghast, Blaze, Wither Skeleton.
-
-Each card:
-
-Top area reserved for a mob image.
-
-Hover: card pops out, blur effect removed, border + shadow glow, subtle rotation.
-
-Two‑line mob description written in short, meme‑style text.
-
-Scroll‑snap helper JS: after scrolling, the closest card auto‑centers for a clean carousel feel.
-
-📜 Section 4 – Manual
-“Player Manual” / survival guide section.
-
-Grid of cards with short, high‑signal tips:
-
-Survival basics
-
-Mining & gear
-
-Nether
-
-End/Dragon
-
-Warm pastry‑brown palette, big blocky boxes like recipe books.
-
-Hover: card lifts slightly with stronger shadow and lighter background.
+📜 Player Manual
+Crafting‑table‑style tips for Survival, Mining, Nether, End — snack‑sized text, warm pastry color palette.
 
 🧱 Footer
-Purple “Sweet Dreams” palette.
+Cozy end‑section with links (Portfolio / Insta / Fiverr), purple “Sweet Dreams” palette and blocky buttons.
 
-Title like “Crafted with Code” / “GG WP”.
+🧩 Tech Stack
+🧾 HTML5 – semantic sections, cards, and nav.
 
-Social‑style buttons (Portfolio, Instagram, Fiverr, etc.) with blocky hover states.
+🎨 CSS3 – custom palettes, pixel font, hover animations, scroll‑snap, sword cursor.
+
+🧠 Vanilla JS – smooth scrolling + auto‑centering mob cards in the horizontal list.
+
+No frameworks. No build step. Just drop it on GitHub Pages / Vercel and it runs.
 
 project-root/
 ├─ index.html        # main file with all section.
@@ -113,3 +45,12 @@ css/
   style.css
 js/
   script.js
+
+<!-- OG card -->
+<div class="og-card">
+  <div class="og-image steve-img"></div>
+  <div class="og-info">
+    <div class="og-name">STEVE</div>
+    <p>Default Hero</p>
+  </div>
+</div>
