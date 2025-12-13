@@ -49,7 +49,7 @@ No heavy frameworks. Lightweight. Efficient. Survival‑mode friendly.
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/deepanjali-codes/minecraft.git
    ```
 2. Open the project folder
 3. Run `index.html` in your browser
