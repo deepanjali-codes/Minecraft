@@ -47,7 +47,7 @@
       .minecraft {
         background-image: url("https://i.pinimg.com/originals/2e/3b/b7/2e3bb7bbc1297c4e04c0aefb738a6f5a.gif");
         background-size: fill;
-            position:relative;
+            position:fixed;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -493,4 +493,5 @@
         }
 
       }
+
 
